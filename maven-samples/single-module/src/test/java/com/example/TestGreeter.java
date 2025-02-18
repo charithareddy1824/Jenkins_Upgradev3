@@ -27,6 +27,13 @@ public class TestGreeter {
     assertThat(greeter.greet(someone), containsString(someone));
   }
   
+  @Test
+  public void greetShouldIncludeTheOneBeingGreet1() {
+    String someone = "Worl";
+
+    assertThat(greeter.greet(someone).length(), is(lessThan(someone.length())));
+  }
+  
 
   @Test
   public void greetShouldIncludeGreetingPhrase() {
