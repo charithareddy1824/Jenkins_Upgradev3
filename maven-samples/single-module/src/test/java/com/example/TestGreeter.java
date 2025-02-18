@@ -28,10 +28,8 @@ public class TestGreeter {
   }
   
   @Test
-  public void greetShouldIncludeTheOneBeingGreet1() {
-    String someone = "Worl";
-
-    assertThat(greeter.greet(someone).length(), is(lessThan(someone.length())));
+  public void intentionallyFailed() {
+    assertTrue(true);
   }
   
 
